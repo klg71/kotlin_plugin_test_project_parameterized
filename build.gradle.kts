@@ -1,3 +1,5 @@
+import de.klg71.kotlintestplugin.KotlinTestExtension
+
 buildscript {
     repositories {
         flatDir {
@@ -10,3 +12,7 @@ buildscript {
 }
 
 apply(plugin="de.klg71.kotlintestplugin")
+
+configure<KotlinTestExtension> {
+    message = "Hello Dose of Kotlin"
+}
